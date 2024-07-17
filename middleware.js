@@ -8,10 +8,10 @@ export function middleware(request) {
 
   // Need to check if cookie is valid
   // if cookie is NOT valid
-  if (!cookie) {
-    // need to redirect to /log https://nextjs.org/docs/app/building-your-application/routing/redirecting#nextresponseredirect-in-middleware NextResponse.redirect in Middleware
-    return NextResponse.redirect(new URL("/login", request.url));
-  }
-  // if cookis IS valid, pass as normal
-  return NextResponse.next();
+  //   if (!cookie) {
+  //     // need to redirect to /log https://nextjs.org/docs/app/building-your-application/routing/redirecting#nextresponseredirect-in-middleware NextResponse.redirect in Middleware
+  //     return NextResponse.redirect(new URL("/login", request.url));
+  //   }
+  //   // if cookis IS valid, pass as normal
+  //   return NextResponse.next();
 }
