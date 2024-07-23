@@ -4,7 +4,7 @@ export default function Login() {
   // Function to handle the admin action
   const handleLogin = async () => {
     // Making a DELETE request to the /api/delete endpoint
-    const response = await fetch("/api/delete", {
+    const response = await fetch("/api/auth", {
       method: "DELETE",
     });
     // Parsing the JSON response
